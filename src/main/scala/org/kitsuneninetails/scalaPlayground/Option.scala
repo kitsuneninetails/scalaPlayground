@@ -79,6 +79,7 @@ object MyOption {
         println(s"variance: ${variance(seq2)}")
 
         println(s"${lift(math.abs)(Some(-1))}")
+        println(s"${lift(math.abs)(None)}")
         println(s"${map2(Some(1), Some(2))(_ + _) getOrElse(-1)}")
         println(s"${map2(Some(1), None)(_ + _) getOrElse(-1)}")
 
